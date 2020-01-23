@@ -1,0 +1,66 @@
+*::selection {
+    color: white; 
+    background: #F50057;
+  }
+
+  .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    color: #2c3e50;
+    border: 5px solid #2c3e50;
+    background-color: #e6e6ea;
+    display: block;
+    font-family: 'trebuchet ms';
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+  }
+  
+  .btn::before {
+    content: "";
+    background-color: #E26A6A;
+    box-shadow: 10px 10px 0 #F1C40F, 
+                20px 20px 0 #3498DB;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.5rem;
+    height: 102%;
+    width: 102%;
+    z-index: -1;
+    transition: all 0.4s ease;
+  }
+  
+  .btn:hover::before {
+    box-shadow: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btnsubmit{
+      
+      border-style: solid;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #2c3e50;
+    border: 3px solid #2c3e50;
+    background-color: #e6e6ea;
+    display: block;
+    font-family: 'trebuchet ms';
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+  }
